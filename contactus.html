@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #264143;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+/* Styling for the navbar links */
+.navbar-link {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Styling for the hover effect on the navbar links */
+.navbar-link:hover {
+    background-color: #16F5ED;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Pacifico', cursive;
+	background-color: #E1FFFE;
+	background-image: url('images/img1.jpg');
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the container */
+}
+
+
+form {
+	display: flex;
+  width: 30%;
+	flex-direction: column;
+	align-items: center;
+	background-color: #E1FFFE;
+	border-radius: 10px;
+	padding: 50px;
+	box-shadow: 0px 0px 10px #C4C4C4;
+}
+
+h1 {
+	margin-bottom: 30px;
+	color: #16F5ED;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #264143;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #C4C4C4;
+}
+
+input[type="submit"] {
+	background-color: #264143;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background-color: #16F5ED;
+}
+footer {
+  background-color: #f4f4f4;
+  padding: 5px 0;
+  margin-top: 0px;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #264143;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #264143;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+li a:hover {
+    background-color: #16F5ED;
+}
+  </style>
+</head>
+<body>    
+<div class="navbar-container">
+        <h1 style="color:#16F5ED">Cake paradise</h1>
+        <div>
+            <a class="navbar-link active" href="cakeparadise.php">Home</a>
+            <a class="navbar-link" href="items.php">items</a>
+            <a class="navbar-link" href="cart.php">Cart</a>
+            <a class="navbar-link" href="contactus.html">Contact Us</a>
+        </div>
+</div>
+
+  
+<div class="container">
+  <form action="contactus.php" method="post">
+    
+    <h1>Contact Us</h1>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message" rows="3" cols="55" required>
+
+    <div class="center-align">
+      <input type="submit" value="Submit" name="submit">
+    </div>
+  </form>  
+
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2023 cakeparadise. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="cakeparadise.php">Home</a></li>
+          <li><a href="items.php">items</a></li>
+          <li><a href="cart.php">Cart</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

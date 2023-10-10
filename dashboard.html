@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Pacifico', cursive;
+	background-color: #E1FFFE;
+	background-size: cover;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cakeparadise-image {
+  max-width: 100%;
+  height: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  margin-top: -150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #264143;
+  text-align: center;
+}
+
+.text-overlay h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+footer {
+  background-color: #f4f4f4;
+  padding: 5px 0;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #264143;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #264143;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+li a:hover {
+    background-color: #16F5ED;
+}
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="dashboard.html">Home</a></li>
+  <li><a href="bookorders.php">Orders</a></li>
+  <li><a href="usercontacts.php">User contacts</a></li>
+</ul>
+
+      </div>
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img src="images/img1.jpg" alt="Pro Image" class="cakeparadise-image">
+          <div class="text-overlay">
+            <h1>Welcome back admin !</h1>
+            <p>It is a admin dashboard of Cake paradise !</p>
+          </div>
+        </div>
+
+      <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; 2023 cakeparadise. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="dashboard.html">Home</a></li>
+          <li><a href="bookorders.php">Orders</a></li>
+          <li><a href="usercontacts.php">User contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

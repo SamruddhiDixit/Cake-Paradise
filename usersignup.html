@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User SignUp - cakeparadise</title>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Pacifico', cursive;
+	background-color: #E1FFFE;
+	background-image: url('images/img1.jpg');
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the container */
+}
+
+
+form {
+	display: flex;
+    width: 30%;
+	flex-direction: column;
+	align-items: center;
+	background-color: #E1FFFE;
+	border-radius: 10px;
+	padding: 50px;
+	box-shadow: 0px 0px 10px #264143;
+}
+
+h2 {
+	margin-bottom: 30px;
+	color: #16F5ED;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #264143;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #264143;
+}
+
+input[type="submit"] {
+	background-color: #264143;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background-color: #16F5ED;
+}
+
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<form method="POST" action="usignup.php">
+			<h2>User SignUp</h2>
+			<label for="username">Create Username</label>
+			<input type="text" name="username" placeholder="Username" required>
+
+			<label for="password">Create Password</label>
+			<input type="password" name="pass" placeholder="Password" required>
+
+			<input type="submit" name = "signup" value="Sign Up">
+            <br>
+            <a href="userlogin.html" style="color: rgb(0, 40, 202);">Already have an account ?</a>
+		</form>
+	</div>
+</body>
+</html>
